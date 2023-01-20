@@ -1,0 +1,173 @@
+body{
+    background: #485A73;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.contenedor{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 20px;
+    background-color: white;
+    box-shadow: 0 40px 60px rgba(0,0,0,0.5);
+}
+
+.contenedor .parte_sup{
+    position: relative;
+    background-color: #8C7A9F;
+    padding: 40px;
+    height: 150px;
+    display:flex;
+    
+}
+.foto img{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 40px 40px rgba(0,0,0,0.1);
+}
+
+.texto{
+    position: relative;
+    bottom: 5px;
+    left: 50px;
+    align-items: center;
+}
+
+.texto h2{
+    color: white;
+    font-size: 35px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    margin: 0px;
+}
+
+.texto .contacto ul{
+    list-style: none;
+    color: white;
+    margin: 15px 0px;
+    padding: 0px 0px 0px 10px;
+    font-size: 20px;
+    
+}
+.texto .contacto li{
+    padding: 0px 0px 0px 10px;
+    font-size: 18px;
+}
+.contenedor .parte_inf{
+    position: relative;
+    padding: 30px 40px;
+}
+
+.icon{
+    display: inline-block;
+    width: 30px;
+}
+
+h3{
+    display: flex;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    font-size: 30px;
+    margin: 10px 0px;
+    justify-content: space-between;
+}
+button {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    color: black;
+    background-color: #B38AAE;
+    margin: 5px;
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+button:hover {
+    background-color: #676A8B; 
+    color: white;
+}
+
+p,h4{
+    font-size: 20px;
+}
+li{
+    font-size: 18px;
+}
+.lista{
+    list-style: none;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+@media only screen and (max-width:640px){
+
+    .contenedor .parte_sup{
+        position: relative;
+        background-color: #8C7A9F;
+        padding: 40px;
+        height: 270px;
+        display:block;
+        text-align: center;
+    }
+    .foto img{
+        position: relative;
+        width: 150px;
+        height: 150px;
+        box-shadow: 0 40px 40px rgba(0,0,0,0.1);
+    }
+    .texto{
+        position: relative;
+        bottom: 5px;
+        left: 0px;
+        
+    }
+
+    .texto .contacto ul{
+        list-style: none;
+        color: white;
+        margin: 15px 0px;
+        padding: 0px 0px 0px 10px;
+        font-size: 20px;
+        text-align: left;
+    }
+    
+}
+
+@media only screen and (max-width:470px){
+    i.fa.fa-envelope-o.icon{
+        display: none;
+    }
+    i.fa.fa-mobile.icon{
+        display: none;
+    }
+    i.fa.fa-map-marker.icon{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:385px){
+    .contenedor .parte_sup{
+        position: relative;
+        background-color: #8C7A9F;
+        padding: 40px;
+        height: 310px;
+        display:block;
+        text-align: center;
+    }
+    .hide{
+        display: flex;
+    }
+
+    button {
+        display: none;
+    }
+}
